@@ -1,4 +1,5 @@
 <template>
+    <p>HELLO WORLD</p>
     <v-tabs>
 
     </v-tabs>
