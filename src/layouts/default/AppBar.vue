@@ -1,5 +1,8 @@
 <template>
-  <v-app-bar flat>
+  <v-app-bar>
+    <v-app-bar-nav-icon>
+
+    </v-app-bar-nav-icon>
     <v-app-bar-title>
       ESTIEM LG SEVILLE
     </v-app-bar-title>
