@@ -3,6 +3,10 @@
     <v-app-bar-title>
       ESTIEM LG SEVILLE
     </v-app-bar-title>
+    <v-tabs>
+      <v-tab :to="{name:'Home'}">Home</v-tab>
+      <v-tab :to="{name:'Events'}">Events</v-tab>
+    </v-tabs>
   </v-app-bar>
 </template>
 
