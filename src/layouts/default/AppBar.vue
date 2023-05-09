@@ -1,6 +1,6 @@
 <template>
   <v-app-bar>
-    <v-app-bar-nav-icon :click="drawerState"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     <v-app-bar-title>
       ESTIEM LG SEVILLE
     </v-app-bar-title>
@@ -27,14 +27,6 @@
   // Esta archivo de vue contiene el menu que siempre se muestra
   import { ref } from 'vue';
   const drawer = ref(false);
-  function drawerState () {
-    if (drawer.value == false) {
-      drawer.value = true
-    }
-    else {
-      drawer.value = false
-    }
-  }
 </script>
 <style>
 </style>
