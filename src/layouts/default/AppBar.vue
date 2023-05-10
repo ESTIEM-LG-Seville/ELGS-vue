@@ -29,4 +29,9 @@
   const drawer = ref(false);
 </script>
 <style>
+@media screen and (max-width: 1280px) {
+  .v-slide-group {
+    display: none !important;
+  }
+}
 </style>
