@@ -2,7 +2,7 @@
 
 ## Useful Links
 
-[Vue Documentation](https://vuejs.org/guide/introduction.html) &rarr Always use **_Composition API_**
+[Vue Documentation](https://vuejs.org/guide/introduction.html) &rarr; Always use **_Composition API_**
 
 [Vuetify Components](https://vuetifyjs.com/en/components/all/)
 
