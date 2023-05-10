@@ -6,6 +6,8 @@
 
 [Vuetify Components](https://vuetifyjs.com/en/components/all/)
 
+[Fontawesome Icons](https://fontawesome.com/icons)
+
 ## Project setup
 
 ```
