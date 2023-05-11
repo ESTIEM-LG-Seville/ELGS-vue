@@ -1,14 +1,8 @@
 <template>
     <v-btn
-        v-scroll="onScroll"
-        v-show="fab"
-        fab
-        dark
-        fixed
-        bottom
-        right
-        color="primary"
-        @click="toTop"
+      class="back-to-top"
+      v-scroll="showBtn"
+      @click="moveToTop"
     >
         <v-icon icon="fas fa-arrow-up" />
     </v-btn>
@@ -17,12 +11,63 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 const fab = ref(false);
-        function onScroll (e:any) {
-            if (typeof window === 'undefined') return
-                const top = window.pageYOffset ||   e.target.scrollTop || 0
-                fab.value = top > 20
+    function moveToTop() {
+      const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+      if (c > 0) {
+        window.requestAnimationFrame(moveToTop);
+        window.scrollTo(0, c - (c / 15));
+      }
+    }
+    function showBtn() {
+      const btn = document.querySelector('.back-to-top');
+      if (btn !== null) {
+        window.onscroll = () => {
+          if (document.documentElement.scrollTop < 25 && btn) {
+            btn.style.visibility = 'hidden';
+          } else {
+            btn.style.visibility = 'visible';
+          }
         };
-        function toTop () {
-            this.$vuetify.goTo(0)
-        };
+      }
+    }
 </script>
+
+<style scoped>
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 17px;
+  cursor: pointer;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0%;
+}
+@media screen and (max-width: 450px) {
+  .back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 17px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 17px;
+  }
+}
+</style>
