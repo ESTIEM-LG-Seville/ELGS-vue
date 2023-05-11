@@ -17,8 +17,8 @@
     temporary
   >
     <v-list>
-      <v-list-item title="Home" :to="{name:'Home'}"></v-list-item>
-      <v-list-item title="Events" :to="{name:'Events'}"></v-list-item>
+      <v-list-item prepend-icon="fas fa-house" title="Home" :to="{name:'Home'}"></v-list-item>
+      <v-list-item prepend-icon="fas fa-passport" title="Events" :to="{name:'Events'}"></v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>

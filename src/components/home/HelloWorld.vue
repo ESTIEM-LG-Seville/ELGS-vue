@@ -23,7 +23,7 @@
             variant="text"
           >
             <v-icon
-              icon="mdi-view-dashboard"
+              icon="fas fa-square-caret-right"
               size="large"
               start
             />
@@ -43,7 +43,7 @@
             variant="flat"
           >
             <v-icon
-              icon="mdi-speedometer"
+              icon="fas fa-gauge-high"
               size="large"
               start
             />
@@ -61,7 +61,7 @@
             variant="text"
           >
             <v-icon
-              icon="mdi-account-group"
+              icon="fas fa-users"
               size="large"
               start
             />
