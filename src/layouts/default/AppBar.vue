@@ -28,7 +28,7 @@
   import { ref } from 'vue';
   const drawer = ref(false);
 </script>
-<style>
+<style scoped>
 @media screen and (max-width: 1280px) {
   .v-slide-group {
     display: none !important;
