@@ -1,36 +1,36 @@
 <template>
     <v-btn
+      icon="fas fa-arrow-up"
+      density="comfortable"
       class="back-to-top"
       v-scroll="showBtn"
       @click="moveToTop"
     >
-        <v-icon icon="fas fa-arrow-up" />
     </v-btn>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-const fab = ref(false);
-    function moveToTop() {
-      const c = document.documentElement.scrollTop || document.body.scrollTop;
-
-      if (c > 0) {
-        window.requestAnimationFrame(moveToTop);
-        window.scrollTo(0, c - (c / 15));
-      }
+  import { ref } from 'vue'
+  const fab = ref(false);
+  function moveToTop() {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+      window.requestAnimationFrame(moveToTop);
+      window.scrollTo(0, c - (c / 15));
     }
-    function showBtn() {
-      const btn = document.querySelector('.back-to-top');
-      if (btn !== null) {
-        window.onscroll = () => {
-          if (document.documentElement.scrollTop < 25 && btn) {
-            btn.style.visibility = 'hidden';
-          } else {
-            btn.style.visibility = 'visible';
-          }
-        };
-      }
+  }
+  function showBtn() {
+    const btn = document.querySelector('.back-to-top');
+    if (btn !== null) {
+      window.onscroll = () => {
+        if (document.documentElement.scrollTop < 25 && btn) {
+          btn.style.visibility = 'hidden';
+        } else {
+          btn.style.visibility = 'visible';
+        }
+      };
     }
+  }
 </script>
 
 <style scoped>
@@ -46,8 +46,6 @@ const fab = ref(false);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
-  border-radius: 0%;
 }
 @media screen and (max-width: 450px) {
   .back-to-top {
