@@ -5,7 +5,11 @@
 
 <script lang="ts" setup>
 // Este archivo contendra lo necesario acerca del Let's get a job
-const props = defineProps({
-    event: Object
-})
+interface Event {
+    name: string
+    description: string
+}
+const props = defineProps<{
+    event: Event
+}>()
 </script>
