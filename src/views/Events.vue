@@ -8,10 +8,10 @@
     </v-tabs>
     <v-window v-model="tab">
         <v-window-item :value="LGJpage">
-            <LGJ></LGJ>
+            <LGJ :event="LGJData"></LGJ>
         </v-window-item>
         <v-window-item :value="TIMESpage">
-            <TIMES></TIMES>
+            <TIMES :event="TIMESData"></TIMES>
         </v-window-item>
     </v-window>
 </template>
@@ -21,8 +21,10 @@
 import { ref } from "vue";
 import LGJ from '../components/events/LGJ.vue'
 import TIMES from '../components/events/TIMES.vue'
-
+import { AllEvents } from '../components/helpers/eventsInfo.json'
 const tab = ref(null)
+const LGJData = AllEvents[0]
+const TIMESData = AllEvents[1]
 </script>
 
 <style>
