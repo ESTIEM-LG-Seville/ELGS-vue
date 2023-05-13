@@ -3,14 +3,14 @@
         v-model="tab"
         align-tabs="center"
     >
-        <v-tab :value="LGJpage">Let's Get a Job</v-tab>
-        <v-tab :value="TIMESpage">TIMES</v-tab>
+        <v-tab value="LGJpage">Let's Get a Job</v-tab>
+        <v-tab value="TIMESpage">TIMES</v-tab>
     </v-tabs>
     <v-window v-model="tab">
-        <v-window-item :value="LGJpage">
+        <v-window-item value="LGJpage">
             <LGJ :event="LGJData"></LGJ>
         </v-window-item>
-        <v-window-item :value="TIMESpage">
+        <v-window-item value="TIMESpage">
             <TIMES :event="TIMESData"></TIMES>
         </v-window-item>
     </v-window>
