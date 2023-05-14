@@ -5,14 +5,10 @@
         <v-card
            max-width="90%"
            variant="outlined"
-           >
-           <v-card-title>
-               <v-img src="../../assets/LetsGetAJob.svg" max-width="128px"></v-img>
-               {{ props.event.name }}
-           </v-card-title>
-           <v-card-text>
-               {{ props.event.description }}
-           </v-card-text>
+        >
+           <v-img src="../../assets/LetsGetAJob.svg" max-width="128px"></v-img>
+           <v-card-title>{{ props.event.name }}</v-card-title>
+           <v-card-text>{{ props.event.description }}</v-card-text>
         </v-card>
     </v-container>
 </template>
