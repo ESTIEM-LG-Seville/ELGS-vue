@@ -2,11 +2,15 @@
     "AllEvents": [
         {
             "name": "Let's get a job",
-            "description": "El Let's Get a Job es un evento de entrevistas rápidas que se realizará en la ETSI. El objetivo es dar a conocer a las empresas futuras promesas de la ingeniería de una forma cercana e interactiva."
+            "description": "Let's Get a Job es un evento de entrevistas rápidas que se realiza en la ETSI. El objetivo es dar a conocer a las empresas futuras promesas de la ingeniería de una forma cercana e interactiva.",
+            "detail1": "El primer día las empresas tienen la oportunidad de dar un taller a los participantes del evento. Pueden elegir el tema tecnológico que más les interese.",
+            "detail2": "El segundo día se realizan las distintas rondas de entrevistas donde las empresas le dan feedback a los particpantes. Los entrevistados son filtrados en función de las preferencias de las empresas."
         },
         {
             "name": "TIMES",
-            "description": "La competición consiste en ofrecer la mejor solución al caso proporcionado por la empresa. Lo cual no solamente requiere de los mejores estudiantes, si no también a las mentes más hábiles"
+            "description": "La competición consiste en ofrecer la mejor solución al caso proporcionado por la empresa. Lo cual no solamente requiere de los mejores estudiantes, si no también a las mentes más hábiles",
+            "detail1": "",
+            "detail2": ""
         }
     ]
 }

@@ -18,13 +18,13 @@
 
 <script lang="ts" setup>
 // Este archivo llama a los componentes necesarios para desplegar los distintos componentes
-import { ref } from "vue";
+import { readonly, ref } from "vue";
 import LGJ from '../components/events/LGJ.vue'
 import TIMES from '../components/events/TIMES.vue'
 import { AllEvents } from '../components/helpers/eventsInfo.json'
 const tab = ref(null)
-const LGJData = AllEvents[0]
-const TIMESData = AllEvents[1]
+const LGJData = readonly(AllEvents[0])
+const TIMESData = readonly(AllEvents[1])
 </script>
 
 <style>
