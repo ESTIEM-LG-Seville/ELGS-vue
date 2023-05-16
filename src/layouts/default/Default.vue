@@ -3,7 +3,8 @@
     <default-bar />
 
     <default-view />
-    <!-- <BTTB></BTTB> -->
+    
+    <back-to-top-btn />
   </v-app>
 </template>
 
@@ -11,5 +12,5 @@
 // Este archivo de vue contiene la web en general, para poder siempre mostrar el menu y el conteido
   import DefaultBar from './AppBar.vue'
   import DefaultView from './View.vue'
-  // import BTTB from '../../components/helpers/BackToTopBtn.vue'
+  import BackToTopBtn from '../../components/helpers/BackToTopBtn.vue'
 </script>
