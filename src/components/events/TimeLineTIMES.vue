@@ -1,5 +1,5 @@
 <template>
-    <v-timeline direction="horizontal" line-color="#678ece">
+    <v-timeline :direction="isPhone" line-color="#678ece">
         <v-timeline-item dot-color="#0c2b5e">
             <template v-slot:opposite>
                 <div class="font-italic">{{ props.fases.local }}</div>
@@ -28,6 +28,8 @@
 </template>
 
 <script lang="ts" setup>
+import { onBeforeMount } from 'vue'
+import { ref } from 'vue'
 interface Fases {
     local: string
     semifinal: string
@@ -35,7 +37,19 @@ interface Fases {
 }
 const props = defineProps<{
     fases: Fases
+    direction : string
 }>()
+
+const isPhone = ref()
+
+onBeforeMount(() => {
+  if (window.innerWidth > 1280) {
+    isPhone.value = "horizontal"
+  }
+  else {
+    isPhone.value = "vertical"
+  }
+})
 </script>
 
 <style scoped>
