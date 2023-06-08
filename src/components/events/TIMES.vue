@@ -20,7 +20,7 @@
 
 <script lang="ts" setup>
 // Este archivo contendra lo necesario acerca del TIMES
-import timelinetimes from "./timeLineTIMES.vue"
+import timelinetimes from "./TimeLineTIMES.vue"
 import { FasesTIMES } from "../helpers/eventsInfo.json"
 import { readonly } from "vue"
 interface Event {

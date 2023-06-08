@@ -37,12 +37,12 @@ interface Fases {
 }
 const props = defineProps<{
     fases: Fases
-    direction : string
 }>()
 
 const isPhone = ref()
 
 onBeforeMount(() => {
+  // It is not reactive, it set up horizontal or vertical just the first time the component is mounted
   if (window.innerWidth > 1280) {
     isPhone.value = "horizontal"
   }
