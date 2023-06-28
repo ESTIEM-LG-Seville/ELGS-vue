@@ -26,6 +26,7 @@
 import { ref, nextTick } from 'vue';
 import MissionVision from '@/components/home/MissionVision.vue';
 import VM from "@/components/helpers/VM.json"
+import { onMounted, onBeforeUnmount } from 'vue';
 let show = ref(false);
 async function showScroll() {
     if (!show.value) {
@@ -40,6 +41,36 @@ async function showScroll() {
     else
         show.value = false
 }
+let resizeObserver: ResizeObserver;
+
+onMounted(() => {
+  const el = document.querySelector('.v-card-title');
+  if (el !== null) {
+    resizeObserver = new ResizeObserver(entries => {
+      for (const entry of entries) {
+        if (entry.contentRect.width >= 600 && entry.contentRect.width <= 1280) {
+            el.classList.remove('text-h6','text-h2');
+            el.classList.add('text-h4');
+        } else if(entry.contentRect.width >1280) {
+            el.classList.remove('text-h4','text-h6');
+            el.classList.add('text-h2');
+        }
+        else {
+            el.classList.remove('text-h2','text-h4');
+            el.classList.add('text-h6');
+        }
+      }
+    });
+    resizeObserver.observe(el.parentNode as Element);
+  }
+});
+
+onBeforeUnmount(() => {
+  if (resizeObserver) {
+    resizeObserver.disconnect();
+  }
+});
+
 </script>
 
 <style scoped>
