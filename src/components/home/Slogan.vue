@@ -23,18 +23,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, nextTick } from 'vue';
 import MissionVision from '@/components/home/MissionVision.vue';
 import VM from "@/components/helpers/VM.json"
 let show = ref(false);
-function showScroll() {
-    const VMel = document.getElementById('VMelement')
-    console.log(VMel,'Elemento')
-    if (show.value == false) {
+async function showScroll() {
+    if (!show.value) {
         show.value = true
+        await nextTick()
+        const VMel = document.getElementById('VMelement')
         if (VMel !== null) {
-            console.log(VMel.offsetTop,'Posicion')
-            window.scrollBy(0, VMel.offsetTop)
+            const Pos = VMel.offsetTop + window.innerHeight
+            window.scrollTo(0, Pos)
         }
     }
     else
