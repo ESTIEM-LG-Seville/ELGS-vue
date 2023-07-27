@@ -5,6 +5,20 @@
     <v-card-title id="title-history">
         CONOCE NUESTRA HISTORIA
     </v-card-title>
+    <v-card-text>
+        <v-timeline density="compact" side="end">
+            <v-timeline-item
+              v-for="info in props.data.OurHistory"
+              :key="info.year"
+              dot-color="secondary"
+              size="small"
+            >
+                <v-alert color="primary">
+                    {{ info.year }} : {{ info.description }}
+                </v-alert>
+            </v-timeline-item>
+          </v-timeline>
+    </v-card-text>
 </v-card>
 </template>
 
@@ -52,4 +66,8 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+.v-card-text {
+    display: flex;
+    justify-content: center;
+}
 </style>
