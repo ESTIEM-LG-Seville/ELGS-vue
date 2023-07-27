@@ -23,9 +23,9 @@
     const btn = document.querySelector('.back-to-top');
     if (btn !== null) {
       window.onscroll = () => {
-        if (document.documentElement.scrollTop < 25 && btn) {
+        if (document.documentElement.scrollTop < 25 && btn instanceof HTMLElement) {
           btn.style.visibility = 'hidden';
-        } else {
+        } else if (btn !== null && btn instanceof HTMLElement) {
           btn.style.visibility = 'visible';
         }
       };
