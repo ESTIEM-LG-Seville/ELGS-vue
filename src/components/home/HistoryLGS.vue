@@ -6,7 +6,7 @@
         CONOCE NUESTRA HISTORIA
     </v-card-title>
     <v-card-text>
-        <v-timeline density="compact" side="end">
+        <v-timeline density="compact" side="end" line-color="primary">
             <v-timeline-item
               v-for="info in props.data.OurHistory"
               :key="info.year"
