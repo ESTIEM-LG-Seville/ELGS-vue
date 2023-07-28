@@ -13,8 +13,12 @@
               dot-color="secondary"
               size="small"
             >
-                <v-alert color="primary">
-                    {{ info.year }} : {{ info.description }}
+                <v-alert 
+                  density="compact"
+                  color="primary"
+                  :title="info.year.toString()"
+                  :text="info.description"
+                >
                 </v-alert>
             </v-timeline-item>
           </v-timeline>
