@@ -14,7 +14,7 @@
               size="small"
             >
                 <v-alert 
-                  class="text-left"
+                  class="text-left timeline-alert"
                   density="compact"
                   color="primary"
                   :title="info.year.toString()"
@@ -74,5 +74,22 @@ onBeforeUnmount(() => {
 .v-card-text {
     display: flex;
     justify-content: center;
+}
+.timeline-alert {
+  min-width: 1280px; /* Ancho mínimo */
+  max-width: 1920px; /* Ancho máximo */
+}
+
+/* Media queries para ajustar el ancho máximo según la resolución */
+@media screen and (max-width: 1280px) {
+  .timeline-alert {
+    min-width: 960px; /* Ancho máximo para resoluciones entre 600px y 959px */
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .timeline-alert {
+    min-width: 100%; /* Ancho máximo para resoluciones de 960px en adelante */
+  }
 }
 </style>
