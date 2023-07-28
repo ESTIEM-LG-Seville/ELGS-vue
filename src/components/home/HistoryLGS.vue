@@ -14,6 +14,7 @@
               size="small"
             >
                 <v-alert 
+                  class="text-left"
                   density="compact"
                   color="primary"
                   :title="info.year.toString()"
