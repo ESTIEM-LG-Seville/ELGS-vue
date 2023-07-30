@@ -1,10 +1,10 @@
 <template>
-  <HelloWorld />
+  <SliderHome />
   <Slogan />
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 // Este archivo de vue llama a los distntos componentes necesarios que tengan que ver con el home
-  import HelloWorld from '@/components/home/HelloWorld.vue'
-  import Slogan from '@/components/home/Slogan.vue'
+import Slogan from '@/components/home/Slogan.vue'
+import SliderHome from '@/components/home/SliderHome.vue'
 </script>
