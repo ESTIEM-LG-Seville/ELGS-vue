@@ -6,36 +6,24 @@
     show-arrows="hover"
   >
     <v-carousel-item
-      v-for="(slide, i) in slides"
+      v-for="(image, i) in images"
       :key="i"
+      :src="getImageUrl(image)"
     >
-      <v-sheet
-        :color="images[i]"
-        height="100%"
-      >
-        <div class="d-flex fill-height justify-center align-center">
-          <div class="text-h2">
-            {{ slide }} Slide
-          </div>
-        </div>
-      </v-sheet>
+      <!-- <v-img 
+        :src="getImageUrl(image)"
+      ></v-img> -->
     </v-carousel-item>
   </v-carousel>
 </template>
 
 <script setup lang="ts">
-let images = [
-    "indigo",
-    "warning",
-    "pink darken-2",
-    "red lighten-1",
-    "deep-purple accent-4"
-]
-let slides = [
-    'First',
-    'Second',
-    'Third',
-    'Fourth',
-    'Fifth'
-]
+import CM_01 from "@/assets/Slide/CM_01.jpg";
+import TIMES_01 from "@/assets/Slide/TIMES_01.png";
+import TIMES_02 from "@/assets/Slide/TIMES_02.png";
+
+const images = [CM_01, TIMES_01, TIMES_02];
+const info = ["LXIII Council Meeting", "TIMES Final 2023 Photo", "TIMES Final 2023 Winner"];
+
+const getImageUrl = (image: any) => image;
 </script>
