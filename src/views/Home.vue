@@ -1,12 +1,12 @@
 <template>
-  <HelloWorld />
+  <SliderHome />
   <Slogan />
   <HistoryLGS :data="OurHistory"></HistoryLGS>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 // Este archivo de vue llama a los distntos componentes necesarios que tengan que ver con el home
-import HelloWorld from '@/components/home/HelloWorld.vue'
+import SliderHome from '@/components/home/SliderHome.vue'
 import Slogan from '@/components/home/Slogan.vue'
 import HistoryLGS from '@/components/home/HistoryLGS.vue';
 import OurHistory from '@/components/helpers/history.json'
