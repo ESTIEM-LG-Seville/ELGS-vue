@@ -2,7 +2,7 @@
 <v-card
     align="center"
 >
-    <v-card-title>
+    <v-card-title id="title-Slogan">
         WORK HARD PLAY HARD
     </v-card-title>
     <v-card-actions
@@ -44,7 +44,7 @@ async function showScroll() {
 let resizeObserver: ResizeObserver;
 
 onMounted(() => {
-  const el = document.querySelector('.v-card-title');
+  const el = document.querySelector('#title-Slogan');
   if (el !== null) {
     resizeObserver = new ResizeObserver(entries => {
       for (const entry of entries) {
