@@ -9,10 +9,8 @@
       v-for="(image, i) in images"
       :key="i"
       :src="getImageUrl(image)"
+      :alt="info[i]"
     >
-      <!-- <v-img 
-        :src="getImageUrl(image)"
-      ></v-img> -->
     </v-carousel-item>
   </v-carousel>
 </template>
