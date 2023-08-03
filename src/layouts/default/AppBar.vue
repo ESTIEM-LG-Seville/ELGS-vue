@@ -20,12 +20,14 @@
       <v-list-item prepend-icon="fas fa-house" color="primary" title="Home" :active="$route.name == 'Home'" :to="{name:'Home'}"></v-list-item>
       <v-list-item prepend-icon="fas fa-passport" color="primary" title="Events" :active="$route.name == 'Events'" :to="{name:'Events'}"></v-list-item>
     </v-list>
+    <footer-drawer></footer-drawer>
   </v-navigation-drawer>
 </template>
 
 <script setup lang="ts">
 import { ref, watch, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
+import FooterDrawer from '@/components/footers/FooterDrawer.vue';
 
 const drawer = ref(false);
 const tab = ref<string | null>(null); // Ahora permitimos que tab pueda ser de tipo 'string' o 'null'
