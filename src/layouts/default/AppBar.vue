@@ -1,6 +1,6 @@
 <template>
   <v-app-bar>
-    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="drawer = !drawer" icon="fas fa-bars" color="primary"></v-app-bar-nav-icon>
     <v-app-bar-title>
       ESTIEM LG SEVILLE
     </v-app-bar-title>
@@ -17,8 +17,8 @@
     temporary
   >
     <v-list>
-      <v-list-item prepend-icon="fas fa-house" title="Home" :active="$route.name == 'Home'" :to="{name:'Home'}"></v-list-item>
-      <v-list-item prepend-icon="fas fa-passport" title="Events" :active="$route.name == 'Events'" :to="{name:'Events'}"></v-list-item>
+      <v-list-item prepend-icon="fas fa-house" color="primary" title="Home" :active="$route.name == 'Home'" :to="{name:'Home'}"></v-list-item>
+      <v-list-item prepend-icon="fas fa-passport" color="primary" title="Events" :active="$route.name == 'Events'" :to="{name:'Events'}"></v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>
