@@ -27,7 +27,7 @@ const icons = [
 const info = [
     "https://www.linkedin.com/company/estiemlgseville",
     "https://www.instagram.com/estiemlgseville/",
-    "mailto:info@estiem-sevilla.es"
+    "mailto:info@estiemlgseville.org"
 ]
 </script>
 
