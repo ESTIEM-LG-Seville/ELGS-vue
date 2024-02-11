@@ -1,10 +1,10 @@
-export interface AllEvents {
+interface AllEvents {
     name: string,
     description: string,
     detail1: string,
     detail2: string
 }
-export interface FasesTIMES {
+interface FasesTIMES {
     local: string,
     semifinal: string,
     final: string
