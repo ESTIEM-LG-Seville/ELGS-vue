@@ -8,7 +8,7 @@
     <v-card-text>
         <v-timeline density="compact" side="end" line-color="primary">
             <v-timeline-item
-              v-for="info in props.data.OurHistory"
+              v-for="info in OurHistory"
               :key="info.year"
               dot-color="secondary"
               size="small"
@@ -29,15 +29,7 @@
 
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount } from 'vue';
-interface Data {
-    OurHistory: Array<{
-        year: number,
-        description: string
-    }>
-}
-const props = defineProps<{
-    data: Data
-}>()
+import { OurHistory } from '@/components//helpers/history';
 
 let resizeObserver: ResizeObserver;
 

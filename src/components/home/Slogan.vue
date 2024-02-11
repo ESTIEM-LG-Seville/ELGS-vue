@@ -15,7 +15,7 @@
     </v-card-actions>
     <!-- <v-expand-transition> -->
     <v-scroll-y-transition>
-        <mission-vision id="VMelement" v-show="show" :data="VM">
+        <mission-vision id="VMelement" v-show="show">
         </mission-vision>
     </v-scroll-y-transition>
     <!-- </v-expand-transition> -->
@@ -25,7 +25,6 @@
 <script setup lang="ts">
 import { ref, nextTick } from 'vue';
 import MissionVision from '@/components/home/MissionVision.vue';
-import VM from "@/components/helpers/VM.json"
 import { onMounted, onBeforeUnmount } from 'vue';
 let show = ref(false);
 async function showScroll() {

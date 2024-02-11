@@ -1,5 +1,8 @@
-{
-    "OurHistory": [
+interface History {
+    year: number,
+    description: string
+}
+export const OurHistory: History[] = [
         {
             "year" : 2002,
             "description" : "Este fue el año que nacimos como organización. Desde entonces no hemos parado de crecer."
@@ -21,4 +24,3 @@
             "description" : "Tras el LXIII Council Meeting decidimos seguir apuntando alto. Organizando así la Final del TIMES. Una de las competiciones de consultoría más grande de toda Europa."
         }
     ]
-}
