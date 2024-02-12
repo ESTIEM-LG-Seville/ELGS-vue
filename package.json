@@ -1,6 +1,6 @@
 {
-  "name": "ELGS-vue",
-  "version": "0.0.0",
+  "name": "elgs-vue",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
