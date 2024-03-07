@@ -6,7 +6,7 @@
            max-width="90%"
            variant="outlined"
         >
-           <v-img src="@/assets/LetsGetAJob.svg" alt="LGJ Logo" max-width="128" height="128"></v-img>
+            <lets-get-a-job class="mt-4" alt="LGJ Logo" max-width=128 height=128></lets-get-a-job>
            <v-card-title>{{ props.event.name }}</v-card-title>
            <v-card-text>{{ props.event.description }}</v-card-text>
         </v-card>
@@ -29,6 +29,7 @@
 
 <script lang="ts" setup>
 // Este archivo contendra lo necesario acerca del Let's get a job
+import LetsGetAJob from '@/assets/LetsGetAJob.vue';
 interface Event {
     name: string
     description: string
