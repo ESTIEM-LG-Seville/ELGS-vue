@@ -1,5 +1,7 @@
 <template>
-    <v-img src="@/assets/logo.svg" alt="ESTIEM LG Seville Logo"></v-img>
+    <div class="pa-4">
+        <logo-estiem alt="ESTIEM LG Seville Logo"></logo-estiem>
+    </div>
     <v-footer class="justify-center">
         <a
             v-for="(ref, i) in info"
@@ -19,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+import logoEstiem from '@/assets/Logo_ESTIEM_LG_Seville.vue';
 const icons = [
     "fab fa-linkedin",
     "fab fa-instagram",
