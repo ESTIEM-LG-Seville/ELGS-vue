@@ -1,6 +1,9 @@
 <template>
-  <v-app-bar>
-    <v-app-bar-nav-icon @click="drawer = !drawer" icon="fas fa-bars" color="primary"></v-app-bar-nav-icon>
+  <v-app-bar
+    color="primary"
+    class="elevation-0"
+  >
+    <v-app-bar-nav-icon @click="drawer = !drawer" icon="fas fa-bars" ></v-app-bar-nav-icon>
     <v-app-bar-title>
       ESTIEM LG SEVILLE
     </v-app-bar-title>

@@ -2,22 +2,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import homePage from '@/views/Home.vue'
 import eventsPage from '@/views/Events.vue'
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: homePage
-  },
-  {
-    path: '/events',
-    name: 'Events',
-    component: eventsPage
-  }
-]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes,
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: homePage
+    },
+    {
+      path: '/events',
+      name: 'Events',
+      component: eventsPage
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "not-found",
+      component: () => import("@/components/helpers/NotFound.vue"),
+    },
+  ]
 })
 
 export default router

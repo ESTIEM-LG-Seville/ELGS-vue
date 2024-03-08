@@ -15,6 +15,9 @@ export default createVuetify({
   defaults: {
     VCard: {
       variant: "text",
+    },
+    VBtn: {
+      variant: "flat",
     }
   },
   theme: {

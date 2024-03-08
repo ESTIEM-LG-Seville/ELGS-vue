@@ -10,8 +10,6 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue'
-  const fab = ref(false);
   function moveToTop() {
     const c = document.documentElement.scrollTop || document.body.scrollTop;
     if (c > 0) {
