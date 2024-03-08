@@ -1,6 +1,7 @@
 <template>
 <v-card
     align="center"
+    class="mt-4"
 >
     <v-card-title id="title-Slogan">
         WORK HARD PLAY HARD

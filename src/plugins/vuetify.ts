@@ -12,6 +12,11 @@ import { createVuetify } from 'vuetify'
 import { aliases, fa } from 'vuetify/iconsets/fa-svg'
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
+  defaults: {
+    VCard: {
+      variant: "text",
+    }
+  },
   theme: {
     themes: {
       light: {

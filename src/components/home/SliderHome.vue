@@ -10,6 +10,7 @@
       :key="i"
       :src="getImageUrl(image)"
       :alt="info[i]"
+      cover
     >
     </v-carousel-item>
   </v-carousel>
