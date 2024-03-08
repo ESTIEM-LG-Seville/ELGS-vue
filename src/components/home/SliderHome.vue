@@ -18,9 +18,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-import CM_01 from "@/assets/Slide/CM_01_1080w.webp";
-import TIMES_01 from "@/assets/Slide/TIMES_01_1080w.webp";
-import TIMES_02 from "@/assets/Slide/TIMES_02_1080w.webp";
+import CM_01 from "@/assets/Slide/CM_01_50.webp";
+import TIMES_01 from "@/assets/Slide/TIMES_01_50.webp";
+import TIMES_02 from "@/assets/Slide/TIMES_02_50.webp";
 
 const images = [CM_01, TIMES_01, TIMES_02];
 const info = ["LXIII Council Meeting", "TIMES Final 2023 Photo", "TIMES Final 2023 Winner"];
