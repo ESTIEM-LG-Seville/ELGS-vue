@@ -1,6 +1,6 @@
 <template>
     <div class="pa-4">
-        <logo-estiem alt="ESTIEM LG Seville Logo"></logo-estiem>
+        <LogoEstiemLgSeville alt="ESTIEM LG Seville Logo"></LogoEstiemLgSeville>
     </div>
     <v-footer class="justify-center">
         <a
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import logoEstiem from '@/assets/Logo_ESTIEM_LG_Seville.vue';
+import LogoEstiemLgSeville from '@/assets/LogoEstiemLgSeville.vue';
 const icons = [
     "fab fa-linkedin",
     "fab fa-instagram",
