@@ -34,7 +34,7 @@ async function showScroll() {
         await nextTick()
         const VMel = document.getElementById('VMelement')
         if (VMel !== null) {
-            const Pos = VMel.offsetTop + window.innerHeight
+            const Pos = VMel.offsetTop + VMel.offsetHeight
             window.scrollTo(0, Pos)
         }
     }
