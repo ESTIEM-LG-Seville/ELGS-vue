@@ -3,6 +3,7 @@
     <v-card
         id="Mission"
         color="primary"
+        variant="flat"
     >
         <v-card-title>{{ VM[0].name }}</v-card-title>
         <v-card-text>{{ VM[0].description }}</v-card-text>
@@ -10,6 +11,7 @@
     <v-card
         id="Vision"
         color="secondary"
+        variant="flat"
     >
         <v-card-title>{{ VM[1].name }}</v-card-title>
         <v-card-text>{{ VM[1].description }}</v-card-text>
