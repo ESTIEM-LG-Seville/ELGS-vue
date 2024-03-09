@@ -39,4 +39,4 @@ const FasesData = readonly(FasesTIMES)
 .v-card {
     margin: 2%;
 }
-</style>@/components/data/eventsInfo
+</style>
