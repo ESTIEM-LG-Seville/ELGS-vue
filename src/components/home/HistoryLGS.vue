@@ -84,4 +84,4 @@ onBeforeUnmount(() => {
     min-width: 100%; /* Ancho máximo para resoluciones de 960px en adelante */
   }
 }
-</style>@/components/data/history
+</style>

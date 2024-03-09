@@ -28,4 +28,4 @@ const TIMESData = readonly(eventsESTIEM[1])
 </script>
 
 <style>
-</style>../components/data/eventsInfo
+</style>

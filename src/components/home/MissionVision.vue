@@ -38,4 +38,3 @@ import { VM } from '@/components/data/VM';
     grid-column: 2;
 }
 </style>
-@/components/data/VM
