@@ -6,6 +6,7 @@
 
 // Styles
 import 'vuetify/styles'
+// Do not use SASS Variables --> https://vuetifyjs.com/en/features/sass-variables/
 
 // Composables
 import { createVuetify } from 'vuetify'
