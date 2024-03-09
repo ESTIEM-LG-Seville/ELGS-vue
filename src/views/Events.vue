@@ -21,7 +21,7 @@
 import { readonly, ref } from "vue";
 import LGJ from '../components/events/LGJ.vue'
 import TIMES from '../components/events/TIMES.vue'
-import { eventsESTIEM } from '../components/helpers/eventsInfo'
+import { eventsESTIEM } from '@/components/data/eventsInfo'
 const tab = ref(null)
 const LGJData = readonly(eventsESTIEM[0])
 const TIMESData = readonly(eventsESTIEM[1])

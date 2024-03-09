@@ -9,6 +9,6 @@
 </template>
 
 <script lang="ts" setup>
-  import AppBar from '@/layouts/AppBar.vue';
-  import BackToTopBtn from '@/components/helpers/BackToTopBtn.vue';
+  import AppBar from '@/components/AppBar.vue';
+  import BackToTopBtn from '@/components/BackToTopBtn.vue';
 </script>

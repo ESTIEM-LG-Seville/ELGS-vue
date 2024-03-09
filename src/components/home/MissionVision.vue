@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { VM } from '@/components/helpers/VM';
+import { VM } from '@/components/data/VM';
 </script>
 
 <style scoped>

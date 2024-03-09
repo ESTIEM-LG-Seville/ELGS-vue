@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount } from 'vue';
-import { OurHistory } from '@/components//helpers/history';
+import { OurHistory } from '@/components/data/history';
 
 let resizeObserver: ResizeObserver;
 
