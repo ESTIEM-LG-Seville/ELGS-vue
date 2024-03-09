@@ -10,5 +10,5 @@
 
 <script lang="ts" setup>
   import AppBar from '@/layouts/AppBar.vue';
-  import BackToTopBtn from '@/components/helpers/BackToTopBtn.vue';
+  import BackToTopBtn from '@/layouts/BackToTopBtn.vue';
 </script>

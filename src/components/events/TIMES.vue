@@ -21,7 +21,7 @@
 <script lang="ts" setup>
 // Este archivo contendra lo necesario acerca del TIMES
 import timelinetimes from "./TimeLineTIMES.vue"
-import { FasesTIMES } from "@/components/helpers/eventsInfo"
+import { FasesTIMES } from "@/components/data/eventsInfo"
 import { readonly } from "vue"
 interface Event {
     name: string
@@ -39,4 +39,4 @@ const FasesData = readonly(FasesTIMES)
 .v-card {
     margin: 2%;
 }
-</style>
+</style>@/components/data/eventsInfo

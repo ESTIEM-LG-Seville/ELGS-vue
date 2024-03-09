@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount } from 'vue';
-import { OurHistory } from '@/components//helpers/history';
+import { OurHistory } from '@/components/data/history';
 
 let resizeObserver: ResizeObserver;
 
@@ -84,4 +84,4 @@ onBeforeUnmount(() => {
     min-width: 100%; /* Ancho máximo para resoluciones de 960px en adelante */
   }
 }
-</style>
+</style>@/components/data/history
