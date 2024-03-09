@@ -1,5 +1,6 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+// Every component regarding a route should be in @/views/*
 import homePage from '@/views/Home.vue'
 import eventsPage from '@/views/Events.vue'
 
