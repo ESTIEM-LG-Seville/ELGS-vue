@@ -3,9 +3,9 @@
     color="primary"
     class="elevation-0"
   >
-    <v-app-bar-nav-icon @click="drawer = !drawer" icon="fas fa-bars" ></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="drawer = !drawer" icon="fas fa-bars" aria-label="Menu"></v-app-bar-nav-icon>
     <v-app-bar-title class="d-flex align-center">
-      <EstiemLgSevilleAppbar class="appbarlogo"/>
+      <EstiemLgSevilleAppbar class="appbarlogo" aria-hidden="true"/>
     </v-app-bar-title>
     <!-- Use the v-tabs in desktop mode -->
     <v-tabs v-model="tab">

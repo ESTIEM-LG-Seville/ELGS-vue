@@ -11,6 +11,7 @@
         <v-btn
         icon="fas fa-chevron-down"
         @click="showScroll"
+        aria-label="missionVision"
         >
         </v-btn>
     </v-card-actions>

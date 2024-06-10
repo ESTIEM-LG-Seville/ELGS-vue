@@ -1,6 +1,6 @@
 <template>
     <div class="pa-4">
-        <LogoEstiemLgSeville alt="ESTIEM LG Seville Logo"></LogoEstiemLgSeville>
+        <LogoEstiemLgSeville alt="ESTIEM LG Seville Logo" aria-label="ESTIEM LG Seville Logo"</LogoEstiemLgSeville>
     </div>
     <v-footer class="justify-center">
         <a
@@ -9,11 +9,13 @@
             :href="ref"
             target="_blank"
             class="mx-2"
+            aria-label="Social Media"
         >
             <v-btn
                 :icon="icons[i]"
                 variant="outlined"
                 color="primary"
+                aria-label="Social Media"
             >
             </v-btn>
         </a>
