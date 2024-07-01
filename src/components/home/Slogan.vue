@@ -1,27 +1,25 @@
 <template>
-<v-card
+  <v-card
     align="center"
     class="mt-4"
->
+  >
     <v-card-title id="title-Slogan">
         WORK HARD PLAY HARD
     </v-card-title>
     <v-card-actions
     >
-        <v-btn
+      <v-btn
         icon="fas fa-chevron-down"
         @click="showScroll"
         aria-label="missionVision"
-        >
-        </v-btn>
+      >
+      </v-btn>
     </v-card-actions>
-    <!-- <v-expand-transition> -->
     <v-scroll-y-transition>
         <mission-vision id="VMelement" v-show="show">
         </mission-vision>
     </v-scroll-y-transition>
-    <!-- </v-expand-transition> -->
-</v-card>
+  </v-card>
 </template>
 
 <script setup lang="ts">
